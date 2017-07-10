@@ -5,7 +5,7 @@
 
     <view-state id="main">
         <on-render>
-            <evaluate expression="testBean.test()"/>
+            <evaluate expression="bookDaoImpl.books"/>
         </on-render>
     </view-state>
 
