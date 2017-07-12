@@ -1,6 +1,6 @@
 package com.okres.library.dao.impl;
 
-import com.okres.library.dao.interfaces.BookDao;
+import com.okres.library.dao.interfaces.BookDAO;
 import com.okres.library.entities.Author;
 import com.okres.library.entities.Book;
 import com.okres.library.entities.Genre;
@@ -18,7 +18,7 @@ import java.util.List;
  * Created by Alex on 10.07.2017.
  */
 @Component
-public class BookDaoImpl implements BookDao {
+public class BookDAOImpl implements BookDAO {
 
     @Autowired
     private SessionFactory sessionFactory;
@@ -27,7 +27,7 @@ public class BookDaoImpl implements BookDao {
 //    It is for user can watch book but thithout content
     private ProjectionList bookProjection;
 
-    public BookDaoImpl () {
+    public BookDAOImpl() {
         bookProjection = Projections.projectionList();
         bookProjection.add(Projections.property("id"), "id");
         bookProjection.add(Projections.property("name"), "name");

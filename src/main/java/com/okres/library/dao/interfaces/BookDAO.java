@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by Alex on 10.07.2017.
  */
-public interface BookDao {
+public interface BookDAO {
 
     List<Book> getBooks();
     List<Book> getBooks(Author author);
